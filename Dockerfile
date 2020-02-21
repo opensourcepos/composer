@@ -8,4 +8,6 @@ ENV COMPOSER_VERSION=1.9.3
 
 WORKDIR /app
 
-CMD ["composer"]
+ENV PATH="/usr/bin:${PATH}"
+
+CMD ["/usr/bin/composer"]
