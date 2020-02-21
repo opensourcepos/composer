@@ -6,7 +6,7 @@ ENV COMPOSER_ALLOW_SUPERUSER=1
 ENV COMPOSER_HOME=/tmp
 ENV COMPOSER_VERSION=1.9.3
 
-RUN apk add zlib-dev
+RUN apk add zlib-dev libpng-dev
 RUN docker-php-ext-install gd
 
 WORKDIR /app
