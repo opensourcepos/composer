@@ -11,6 +11,6 @@ RUN docker-php-ext-install gd
 
 WORKDIR /app
 
-ENV PATH="/usr/bin:${PATH}"
+ENV PATH="/usr/bin:/usr/local/bin:${PATH}"
 
 CMD ["/usr/bin/composer"]
